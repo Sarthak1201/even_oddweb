@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> My fifth web app </title>
+<style>
+  *{font-size:40px;font-family:Ink Free;}
+  body{background-color:Azure;}
+  h1{background-color:black; color:white;width:50%;border radius:40px;}
+
+</style>
+</head>
+
+<body>
+ <center>
+ <h1> Even Odd App by Sarthak </h1>
+<form onsubmit="show()">
+   <input type="number" placeholder="Enter the Integer" id="num"/>
+<br><br>
+<input type="submit" value="Check"/>
+</form>
+<h2 id="msg"/>
+
+
+<script>
+    function show()
+{ 
+event.preventDefault();
+let name =document.getElementById("num");
+let msg=document.getElementById("msg");
+
+if(name.value==="")
+{
+alert("You did not enter integer");
+msg.innerHTML="";
+name.focus();
+return;
+}
+
+let n= parseInt(num.value);
+let rep=""
+if(n%2==0)
+     rep="num"+n+"is even";
+else
+     rep="num" +n+"is odd";
+
+ msg.innerHTML=rep;
+}
+</script>
+</center
+
+</body>
+
+
+</html>
